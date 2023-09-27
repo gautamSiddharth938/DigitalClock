@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden!important;
+    background-image: url('clement-fusil-Fpqx6GGXfXs-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+#clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Edu SA Beginner', cursive;
+    color: #fff;
+    text-align: center;
+    width: 80vw;
+    height: 40vh;
+    font-size: 30px;
+    opacity: .65;
+    background-image: url('jonathan-borba-3eC5n6gHwe8-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    /* padding: 50px; */
+    /* margin: 175px 100px 175px 100px; top left bottom right */
+}
+
+#hours,
+#minutes,
+#seconds {
+    /* background-color: blue; */
+    height: 30%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    color: rgb(252, 5, 149);
+    font-size: 40px;
+    line-height:3em;
+    padding: 2rem 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+    #hours,#minutes,#seconds{
+        font-size: 18px;
+        padding: 0.5rem 0.5rem;
+        color: rgb(75, 252, 5);
+    }
+    #clock{
+        font-size: 15px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1240px) {
+    #hours,#minutes,#seconds{
+        font-size: 30px;
+        padding: 1rem 1rem;
+        color: rgb(252, 215, 5);
+    }
+    #clock{
+        font-size: 25px;
+    }
+}
